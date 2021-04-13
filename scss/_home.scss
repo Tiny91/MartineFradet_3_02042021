@@ -1,0 +1,116 @@
+// section module de recherche//
+.search
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-bckground;
+  .search__location //formulaire de recherhe//
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: darken($color-bckground, 10%);
+    border-top: 2px groove darken($color-bckground, 10%);
+    vertical-align: middle;
+    input {
+      background-color: transparent;
+      border: transparent;
+      font-size: 1rem;
+      font-weight: bold;
+      color: $color-grey;
+    }
+    .fa-map-marker-alt /* icone localisation*/ {
+      padding-right: 10px;
+    }
+  }
+  .search__text //texte explicatif//
+  {
+    text-align: center;
+    .btn //bouton d'exploration//
+    {
+      background-color: $color-secondary;
+      border-radius: 30px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+      padding: 15px;
+      border: none;
+      box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+      a {
+        padding: 10px;
+        color: white;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+//section fonctionnement//
+.fonctionnement 
+{
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+  //etapes de fonctionnement//
+.step 
+{
+  background-color: $color-bckground;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+  vertical-align: middle;
+  &:hover 
+  {
+    background-color: lighten($color-primary, 50%);
+  } 
+}
+.number 
+{
+  display: inline-block;
+  background: $color-primary;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  position: relative;
+  left: -20px;
+}
+
+//section restaurant//
+.restaurant 
+{
+  padding-bottom: 20px;
+  background-color: $color-bckground;
+  display: flex;
+  flex-direction: column;
+  .restaurant__cards 
+  {
+    align-items: center;
+  }
+}
+  //cartes restaurants//
+  .boxcard 
+  {
+    width: 320px;
+    background-color: white;
+    border-radius: 20px;
+    height: 250px;
+    img   
+    {
+      width: 100%;
+      max-height: 160px;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .legend 
+    {
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }

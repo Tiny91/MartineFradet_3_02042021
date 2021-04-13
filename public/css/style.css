@@ -1,1 +1,204 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0px;
+  max-width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  padding-right: 10px;
+  color: #575757;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 12rem;
+}
+
+footer {
+  padding: 10px 0px 20px 25px;
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  color: white;
+}
+
+footer h2 {
+  font-family: "shrikland";
+  font-style: italic;
+}
+
+h2 {
+  text-indent: 1.5rem;
+}
+
+.heart {
+  font-size: 2rem;
+}
+
+.heart :hover {
+  cursor: pointer;
+  color: #9356dc;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f0f0f0;
+}
+
+.search .search__location {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #d7d7d7;
+  border-top: 2px groove #d7d7d7;
+  vertical-align: middle;
+}
+
+.search .search__location input {
+  background-color: transparent;
+  border: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #575757;
+}
+
+.search .search__location .fa-map-marker-alt {
+  padding-right: 10px;
+}
+
+.search .search__text {
+  text-align: center;
+}
+
+.search .search__text .btn {
+  background-color: #ff79da;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: none;
+  -webkit-box-shadow: 4px 4px 6px #bdbdbd;
+          box-shadow: 4px 4px 6px #bdbdbd;
+}
+
+.search .search__text .btn a {
+  padding: 10px;
+  color: white;
+  font-weight: 200;
+}
+
+.fonctionnement {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.step {
+  background-color: #f0f0f0;
+  margin: 25px;
+  padding: 15px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 4px 4px 6px #bdbdbd;
+          box-shadow: 4px 4px 6px #bdbdbd;
+  vertical-align: middle;
+}
+
+.step:hover {
+  background-color: white;
+}
+
+.number {
+  display: inline-block;
+  background: #9356dc;
+  color: white;
+  padding: 3px 6px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  position: relative;
+  left: -20px;
+}
+
+.restaurant {
+  padding-bottom: 20px;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.restaurant .restaurant__cards {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boxcard {
+  width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  height: 250px;
+}
+
+.boxcard img {
+  width: 100%;
+  max-height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.boxcard .legend {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=style.css.map */

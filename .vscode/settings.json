@@ -1,0 +1,12 @@
+{
+    "scss.hover.references": false,
+    "liveSassCompile.settings.formats": [
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/public/css"
+        }
+    ]
+}
