@@ -54,11 +54,36 @@ h2
 {
   text-indent: 1.5rem;
 }
-
-.heart {
+// transition au clic pour le coeur//
+.like 
+{ position: relative;
   font-size: 2rem;
+  margin-right: 20px;
+  margin-top: 5px;
+  .default-icon
+  { 
+  position: absolute;
+  }
+  .hover-icon
+  {position: absolute;
+  opacity: 0;
+  }
   :hover {
     cursor: pointer;
-    color: $color-primary;
+    color: $color-secondary ;
+    opacity:1;
   }
+}
+
+//dégradé couleur sur bouton rose/violet//
+.colorbtn
+{
+  background:linear-gradient(to bottom right,$color-secondary,$color-primary);
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: none;
+  color: white;
+  box-shadow: 4px 4px 6px darken($color-bckground, 20%);
 }

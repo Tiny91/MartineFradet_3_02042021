@@ -52,13 +52,39 @@ h2 {
   text-indent: 1.5rem;
 }
 
-.heart {
+.like {
+  position: relative;
   font-size: 2rem;
+  margin-right: 20px;
+  margin-top: 5px;
 }
 
-.heart :hover {
+.like .default-icon {
+  position: absolute;
+}
+
+.like .hover-icon {
+  position: absolute;
+  opacity: 0;
+}
+
+.like :hover {
   cursor: pointer;
-  color: #9356dc;
+  color: #ff79da;
+  opacity: 1;
+}
+
+.colorbtn {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 15px;
+  border: none;
+  color: white;
+  -webkit-box-shadow: 4px 4px 6px #bdbdbd;
+          box-shadow: 4px 4px 6px #bdbdbd;
 }
 
 .search {
@@ -108,23 +134,6 @@ h2 {
 
 .search .search__text {
   text-align: center;
-}
-
-.search .search__text .btn {
-  background-color: #ff79da;
-  border-radius: 30px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  padding: 15px;
-  border: none;
-  -webkit-box-shadow: 4px 4px 6px #bdbdbd;
-          box-shadow: 4px 4px 6px #bdbdbd;
-}
-
-.search .search__text .btn a {
-  padding: 10px;
-  color: white;
-  font-weight: 200;
 }
 
 .fonctionnement {
@@ -179,6 +188,7 @@ h2 {
 }
 
 .boxcard {
+  position: relative;
   width: 320px;
   background-color: white;
   border-radius: 20px;
@@ -191,6 +201,17 @@ h2 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+
+.boxcard .new {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: #99e2d0;
+  padding: 4px 10px;
+  color: #32b091;
+  font-weight: bold;
+  font-size: .8rem;
 }
 
 .boxcard .legend {
