@@ -16,21 +16,23 @@
     background-color: darken($color-bckground, 10%);
     border-top: 2px groove darken($color-bckground, 10%);
     vertical-align: middle;
-    input {
+    input 
+    {
       background-color: transparent;
       border: transparent;
       font-size: 1rem;
       font-weight: bold;
       color: $color-grey;
     }
-    .fa-map-marker-alt /* icone localisation*/ {
+    .fa-map-marker-alt /* icone localisation*/ 
+    {
       padding-right: 10px;
     }
   }
   .search__text //texte explicatif//
   {
     text-align: center;  
-   }
+  }
 }
 
 //section fonctionnement//
@@ -38,9 +40,12 @@
 {
   margin-top: 40px;
   margin-bottom: 60px;
+  h2
+  {
+    text-indent: 2rem;
+  }
 }
-  //etapes de fonctionnement//
-.step 
+.step //etapes de fonctionnement//
 {
   background-color: $color-bckground;
   margin: 25px;
@@ -49,12 +54,17 @@
   display: flex;
   box-shadow: 4px 4px 6px darken($color-bckground, 20%);
   vertical-align: middle;
-  &:hover 
+  .fas 
   {
-    background-color: lighten($color-primary, 50%);
-  } 
-}
-.number 
+    padding-right: 15px;
+  }
+  &:hover //changt couleur au survol//
+  {
+    background-color: $color-lightprimary;
+  }
+}   
+
+.step__number 
 {
   display: inline-block;
   background: $color-primary;
@@ -73,43 +83,46 @@
   background-color: $color-bckground;
   display: flex;
   flex-direction: column;
+  h2
+  {
+    text-indent: 2rem;
+  }
   .restaurant__cards 
   {
     align-items: center;
   }
 }
-  //cartes restaurants//
-  .boxcard 
+
+.restaurant__boxcard //cartes restaurants//
+{
+  position:relative;
+  width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  height: 250px;
+  img   
   {
-    position:relative;
-    width: 320px;
-    background-color: white;
-    border-radius: 20px;
-    height: 250px;
-    img   
-    {
-      width: 100%;
-      max-height: 160px;
-      object-fit: cover;
-      border-radius: 20px 20px 0px 0px;
-    }
-    .new 
-    {
-      position: absolute;
-      top: 10px;
-      right: 12px;
-      background: $color-tertiary;
-      padding: 4px 10px;
-      color: $color-darkgreen;
-      font-weight: bold;
-      font-size: .8rem;
-      
-    }
-    .legend 
-    {
-      padding-top: 10px;
-      display: flex;
-      justify-content: space-around;
-    }
+    width: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
   }
+  .new 
+  {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: $color-tertiary;
+    padding: 4px 10px;
+    color: $color-darkgreen;
+    font-weight: bold;
+    font-size: .8rem;
+  }
+   .restaurant__legend 
+  {
+    padding: 10px 30px 10px 20px;
+    display: flex;
+    justify-content: space-between
+  }
+}
   
