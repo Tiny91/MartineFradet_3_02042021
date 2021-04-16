@@ -1,3 +1,5 @@
+//Commun à toutes les pages//
+
 body 
 {
   font-family: "roboto", sans-serif;
@@ -11,9 +13,8 @@ a
   color: black;
 }
 
-i 
+i /*couleur par défaut des icones*/
 {
-  padding-right: 10px;
   color: $color-grey;
 }
 
@@ -21,7 +22,7 @@ header
 {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 25px;
   margin-bottom: 20px;
 }
 
@@ -32,29 +33,27 @@ header
 
 footer 
 {
-  padding: 10px 0px 20px 25px;
+  padding: 10px 0px 20px 35px;
   background-color: black;
   color: white;
   a 
   {
     color: white;
   }
-  i
+  .fas
   {
     color: white;
-  }
-  h2 
-  {
-    font-family: "shrikland";
-    font-style: italic;
+    padding-right: 10px;
   }
 }
 
-h2 
+.name /*Titre h2 police differente*/
 {
-  text-indent: 1.5rem;
+  font-family: "shrikland";
+  font-style: italic;
 }
-// transition au clic pour le coeur//
+
+// propriétés et animation du coeur //
 .like 
 { position: relative;
   font-size: 2rem;
@@ -65,13 +64,19 @@ h2
   position: absolute;
   }
   .hover-icon
-  {position: absolute;
+  {
+  position: absolute;
   opacity: 0;
-  }
-  :hover {
+  color:$color-primary;
+  background:linear-gradient($color-primary,$color-secondary);
+  background-clip: text;
+  color: transparent;
+  transition-duration: 500ms;
+    &:hover 
+    {
     cursor: pointer;
-    color: $color-secondary ;
     opacity:1;
+    }
   }
 }
 
@@ -87,3 +92,4 @@ h2
   color: white;
   box-shadow: 4px 4px 6px darken($color-bckground, 20%);
 }
+

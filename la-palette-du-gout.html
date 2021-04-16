@@ -10,36 +10,57 @@
 </head>
 
 <body>
-    <header>
+    <header>   
+        <div>
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
         <div class="logo">
-        <img src="public/img/logo.png" alt="Ohmyfood"/>
-        <h1 hidden> Ohmyfood , réservez votre menu avant votre venue</h1>
+            
+            <img src="public/img/logo.png" alt="Ohmyfood"/>
+            <h1 hidden> Ohmyfood , réservez votre menu avant votre venue</h1>
+        </div>
         </div>
     </header>
 
     <main>
-        <h2 class="name"> La palette du goût</h2>
-        <section class="entrées">
-            <h3>entrées</h3>
-            <div class="step --whitestep">
-                Fricassée d'escargot
-                Au piment d'Espelette 
-                25€
+        <div class="picture"></div>
+        <section class="menu">
+            <div class="menu__title">
+                <h2 class="name"> La palette du goût</h2>
+                <span class="like"> 
+                <i class="far fa-heart default-icon"></i>
+                <i class="fas fa-heart hover-icon"></i>
+                </span>
             </div>
-            <div class="step --whitestep">
-                Foie gras de canard mi-cuit
-                Et ses copeaux de truffe noire
-                35€
+            <section class="menu__entrées">
+                <h3>entrées</h3>
+                <div class="step step--menustep">
+                    <div class="choice">
+                        <h4>Fricassée d'escargot</h4>
+                        <p>Au piment d'Espelette </p>
+                    </div>
+                    <div class="price"> 25€                      
+                    </div>
+                </div>
+            <div class="step step--menustep">
+                <div class="choice">
+                    <h4>Foie gras de canard mi-cuit</h4>
+                    <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="price">35€                    
+                </div>                              
             </div>
-            <div class="step --whitestep">
-                Oeuf au plat
-                Assaisonné à la truffe sur lit de caviar
-                20€
+            <div class="step step--menustep">
+                <div class="choice">
+                    <h4>Oeuf au plat</h4>
+                    <p>Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <div class="price">20€</div>
             </div>
         </section>
 
         <section class="plats">
-            <h3>Plats</h3>
+            <h3>plats</h3>
             <div class="step --whitestep"
                 >Filet de boeuf aux herbes
                 Accompagné de sa ribambelle de légumes
@@ -77,18 +98,17 @@
         <section class="colorbtn">
             <p>Commander</p>
         </section>
-
+    </section>
     </main>
 
     <footer>
-<h2> ohmyfood</h2>
-<p>
-<i class="fas fa-utensils"></i>Proposer un restaurant <br/>
-<i class="fas fa-hands-helping"></i>Devenir partenaire <br/>
-Mentions légales <br/>
-<a href="#">Contact</a>
-</p>
+        <h2 class="name">ohmyfood</h2>
+        <p><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></p> 
+        <p><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></p> 
+        <p><a href="#">Mentions légales</a></p> 
+        <p><a href="#">Contact</a></p>
     </footer>
+
 
 
 </body>
