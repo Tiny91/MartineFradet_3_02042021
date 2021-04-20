@@ -61,6 +61,10 @@
   &:hover //changt couleur au survol//
   {
     background-color: $color-lightprimary;
+    .fas
+    {
+      color:$color-primary;
+    }
   }
 }   
 

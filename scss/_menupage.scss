@@ -1,16 +1,24 @@
 // les pages de chaque restaurant//
 
 header
-{display: flex;
-justify-content: space-evenly;}
+{
+display: flex;
+justify-content: space-evenly;
+padding-left: 0px;
+    .fa-arrow-left
+    {
+    font-size: 1.3rem;
+    color: black;
+    }
+}
 
-.picture {
-    height: 280px;
-    background-color: $color-bckground;
-    background-image: url("/public/img/palette-gout.jpg"); 
-    background-size: cover;
-    
 
+.picture // la photo du restaurant//
+{
+height: 280px;
+background-color: $color-bckground;
+background-image: url("/public/img/palette-gout.jpg"); 
+background-size: cover; 
 }
 
 .menu 
@@ -20,24 +28,92 @@ border-radius: 50px 50px 0 0;
 margin-top: -50px;
 padding-top: 10px;
 padding-bottom: 30px;
-
-h3{
-    font-variant:small-caps;
-    text-indent: 2rem;
-}
-}
-
-.menu__title
-{
+    .menu__title
+    {
     display: flex;
     padding: 10px 40px 10px 30px;
     justify-content: space-between;
-    .name
-    {font-size: 2.0rem;
+        .name
+        {font-size: 2.0rem;
+        }
+    }
+    .menu__subtitle 
+    {
+    font-variant:small-caps;
+    margin-left: 2rem;
+    border-bottom: 4px solid $color-tertiary;
+    width: 3rem;
     }
 }
 
-.step--menustep
-{background-color: white;
-flex-direction: column;}
-
+.menustep
+{
+background-color: white;
+display: flex;
+position:relative;
+margin: 15px;
+padding: 5px 10px;
+border-radius: 20px;
+box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+&:hover 
+    {
+        .menu__price // mouvement prix vers la gauche//
+        {
+        transform: translateX(-60px);
+        transition: transform 1500ms
+        }
+        .check--off // déplacement  check blanc pour laisser apparaitre le bloc vert//
+        {
+        border-radius: 0;
+        transform: translate(-75px) ;
+        transition: transform 1500ms;       
+        }
+        .fas // rotation de la coche verte //
+        {
+        transform: rotate(0deg);
+        transition: transform 1000ms 500ms;  
+        }
+    }
+}
+.menu__price
+{
+  position: absolute;
+  right: 40px;
+  font-weight: bold;
+  z-index: 20;
+}
+.menu__choice
+{
+line-height: .4rem;
+}
+.check //bloc de validation choix//
+{
+position: absolute;
+bottom: 0px;
+right:0px;
+background-color: white;
+width: 20%;
+height:100%;
+border-radius: 0 20px 20px 0;
+    .check--off
+    {
+        @extend .check;
+        width:100%;
+        z-index:10;
+    }
+    .check--on
+    {
+        @extend .check;
+        background: $color-tertiary;
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+   .fas
+    {
+        color: white;
+        font-size: 1.5rem;
+        transform: rotate(180deg);
+    }
+}
