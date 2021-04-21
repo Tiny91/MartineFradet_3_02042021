@@ -79,6 +79,7 @@ footer .fas {
 .colorbtn {
   background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: 200px;
   border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -87,6 +88,12 @@ footer .fas {
   color: white;
   -webkit-box-shadow: 4px 4px 6px #bdbdbd;
           box-shadow: 4px 4px 6px #bdbdbd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .search {
@@ -286,6 +293,15 @@ header .fa-arrow-left {
   font-size: 2.0rem;
 }
 
+.menu .menu__title .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu .menu__subtitle {
   font-variant: small-caps;
   margin-left: 2rem;
@@ -379,5 +395,15 @@ header .fa-arrow-left {
   font-size: 1.5rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.command {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

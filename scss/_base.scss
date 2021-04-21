@@ -84,6 +84,7 @@ footer
 .colorbtn
 {
   background:linear-gradient(to bottom right,$color-secondary,$color-primary);
+  width:200px;
   border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -91,5 +92,7 @@ footer
   border: none;
   color: white;
   box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+  display: flex;
+  justify-content:center;
 }
 
