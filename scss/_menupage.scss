@@ -51,22 +51,18 @@ padding-bottom: 30px;
 }
 
 .menustep
-{
+{ overflow:hidden;
+text-overflow: ellipsis;
+font-size: 0.9rem;
 background-color: white;
-display: flex;
 position:relative;
 margin: 15px;
-padding: 5px 10px;
+padding-left: 15px;
 border-radius: 20px;
 box-shadow: 4px 4px 6px darken($color-bckground, 20%);
 &:hover 
     {
-        .menu__price // mouvement prix vers la gauche//
-        {
-        transform: translateX(-60px);
-        transition: transform 1500ms
-        }
-        .check--off // déplacement  check blanc pour laisser apparaitre le bloc vert//
+        .check--off // déplacement pour laisser apparaitre check-on//
         {
         border-radius: 0;
         transform: translate(-75px) ;
@@ -79,17 +75,25 @@ box-shadow: 4px 4px 6px darken($color-bckground, 20%);
         }
     }
 }
+.menu__choice
+{ overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width:70%;
+    }
+}
 .menu__price
 {
   position: absolute;
-  right: 40px;
+  bottom:15px;
+  right:20px;
   font-weight: bold;
-  z-index: 20;
 }
-.menu__choice
-{
-line-height: .4rem;
-}
+
 .check //bloc de validation choix//
 {
 position: absolute;

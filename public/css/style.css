@@ -310,25 +310,16 @@ header .fa-arrow-left {
 }
 
 .menustep {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   margin: 15px;
-  padding: 5px 10px;
+  padding-left: 15px;
   border-radius: 20px;
   -webkit-box-shadow: 4px 4px 6px #bdbdbd;
           box-shadow: 4px 4px 6px #bdbdbd;
-}
-
-.menustep:hover .menu__price {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-  -webkit-transition: -webkit-transform 1500ms;
-  transition: -webkit-transform 1500ms;
-  transition: transform 1500ms;
-  transition: transform 1500ms, -webkit-transform 1500ms;
 }
 
 .menustep:hover .check--off {
@@ -350,15 +341,24 @@ header .fa-arrow-left {
   transition: transform 1000ms 500ms, -webkit-transform 1000ms 500ms;
 }
 
-.menu__price {
-  position: absolute;
-  right: 40px;
-  font-weight: bold;
-  z-index: 20;
+.menu__choice {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.menu__choice {
-  line-height: .4rem;
+.menu__choice p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.menu__price {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-weight: bold;
 }
 
 .check, .check .check--off, .check .check--on {
