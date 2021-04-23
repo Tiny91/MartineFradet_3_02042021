@@ -5,8 +5,10 @@
     <link rel="stylesheet" href="public/css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/fdbfa822b3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdbfa822b3.js" crossorigin="anonymous"></script>
     <title>ohmyfood - Votre menu en ligne </title>
+
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="page">
         <section class="search"> <!--module de recherche du lieu-->
             <form class="search__location" method="POST">
                 <i class="fas fa-map-marker-alt"></i>
@@ -57,7 +59,7 @@
                     <div class="new">Nouveau</div>
                     <div class="restaurant__legend">
                         <span>
-                            <a href="la-palette-du-gout.html">
+                            <a class="linkrestaurant" href="la-palette-du-gout.html">
                             <strong>La palette du goût</strong><br/>
                              Ménilmontant    
                             </a>
@@ -130,7 +132,8 @@
         <p><a href="#">Contact</a></p>
     </footer>
 
-
+    <div class="loader"></div>
+    
 </body>
 
 </html>
