@@ -1,4 +1,4 @@
-//Commun à toutes les pages//
+/*Commun à toutes les pages*/
 
 body 
 {
@@ -46,14 +46,14 @@ footer
     padding-right: 10px;
   }
 }
-
-.name /*Titre h2 police differente*/
+/*Titre h2 police differente*/
+.name 
 {
   font-family: "shrikland";
   font-style: italic;
 }
 
-// propriétés et animation du coeur //
+/* propriétés et animation du coeur */
 .like 
 { position: relative;
   font-size: 2rem;
@@ -71,7 +71,7 @@ footer
   background:linear-gradient($color-primary,$color-secondary);
   background-clip: text;
   color: transparent;
-  transition-duration: 500ms;
+  transition-duration: 400ms;
     &:hover 
     {
     cursor: pointer;
@@ -80,19 +80,43 @@ footer
   }
 }
 
-//dégradé couleur sur bouton rose/violet//
+/*dégradé couleur sur bouton rose/violet et action au survol*/
 .colorbtn
 {
-  background:linear-gradient(to bottom right,$color-secondary,$color-primary);
+  background:$color-btn;
+  position:relative;
   width:200px;
+  cursor:pointer;
+  z-index: 1;
   border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 50px;
   padding: 15px;
   border: none;
   color: white;
-  box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+  box-shadow: 4px 4px 6px darken($color-bckground, 25%);
   display: flex;
   justify-content:center;
-}
+  &:hover
+  {
+    &::after
+    {
+    opacity:1;
+    }
+  }
+  &::after 
+  {
+    background: $color-btnafter;
+    box-shadow: 4px 4px 6px darken($color-bckground, 40%);
+    border-radius: 30px;
+    content:"";
+    opacity: 0;
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    z-index: -1;
+  }
 
+}

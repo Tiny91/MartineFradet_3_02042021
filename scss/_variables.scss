@@ -2,8 +2,8 @@ $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 $color-bckground: #f0f0f0;
-$color-grey:darken($color-bckground, 40%);
-$color-darkgreen:darken($color-tertiary, 40%);
-$color-lightprimary:lighten($color-primary, 30%);
-
-
+$color-grey: darken($color-bckground, 40%);
+$color-darkgreen: darken($color-tertiary, 40%);
+$color-lightprimary: lighten($color-primary, 30%);
+$color-btn: linear-gradient(to bottom right, $color-secondary, $color-primary);
+$color-btnafter: linear-gradient(to bottom right, lighten($color-secondary, 5%), lighten($color-primary, 5%));
