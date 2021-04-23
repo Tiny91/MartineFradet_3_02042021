@@ -1,4 +1,4 @@
-// les pages de chaque restaurant//
+/* les pages de chaque restaurant*/
 
 header
 {
@@ -12,29 +12,34 @@ padding-left: 0px;
     }
 }
 
+/* la photo du restaurant en-tête*/
+.picturebox
+{width:100%;
+height:250px}
 
-.picture // la photo du restaurant//
+.picture 
 {
-height: 280px;
+max-width: 100%;
 background-color: $color-bckground;
-background-image: url("/public/img/palette-gout.jpg"); 
-background-size: cover; 
+object-fit: cover; 
 }
 
 .menu 
 {
 background-color: $color-bckground;
 border-radius: 50px 50px 0 0;
-margin-top: -50px;
+margin-top: -45px;
 padding-top: 10px;
 padding-bottom: 30px;
+position: relative;
     .menu__title
     {
     display: flex;
-    padding: 10px 40px 10px 30px;
+    padding: 0px 40px 0px 40px;
     justify-content: space-between;
         .name
         {font-size: 2.0rem;
+        font-weight: bolder;
         }
         .like
         { display: flex;
@@ -49,22 +54,24 @@ padding-bottom: 30px;
     width: 3rem;
     }
 }
-
+/* bouton de chaque plat*/
 .menustep
-{ overflow:hidden;
+{overflow:hidden;
 text-overflow: ellipsis;
+white-space: nowrap;
+display: flex;
 font-size: 0.9rem;
 background-color: white;
 position:relative;
+cursor: pointer;
 margin: 15px;
 padding-left: 15px;
 border-radius: 20px;
 box-shadow: 4px 4px 6px darken($color-bckground, 20%);
 &:hover 
     {
-        .check--off // déplacement pour laisser apparaitre check-on//
+        .check // faire apparaitre coche verte//
         {
-        border-radius: 0;
         transform: translate(-75px) ;
         transition: transform 1500ms;       
         }
@@ -73,60 +80,58 @@ box-shadow: 4px 4px 6px darken($color-bckground, 20%);
         transform: rotate(0deg);
         transition: transform 1000ms 500ms;  
         }
+        .menu__price
+        {
+        transform: translate(-65px) ;
+        transition: transform 1500ms; 
+        } 
+
     }
-}
-.menu__choice
-{ overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-      p {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width:70%;
-    }
-}
-.menu__price
-{
-  position: absolute;
-  bottom:15px;
-  right:20px;
-  font-weight: bold;
 }
 
-.check //bloc de validation choix//
+.menu__choice
+{ overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+ width: 85%; 
+ p 
+ {
+overflow: hidden;
+ text-overflow: ellipsis;
+white-space: nowrap;
+width: 90%;}
+   
+  }
+.menu__price
+{   width: 15%;
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    
+}
+/*bloc de validation choix*/
+.check 
 {
 position: absolute;
 bottom: 0px;
-right:0px;
-background-color: white;
+right:-80px;
+background-color: $color-tertiary;
 width: 20%;
 height:100%;
 border-radius: 0 20px 20px 0;
-    .check--off
-    {
-        @extend .check;
-        width:100%;
-        z-index:10;
-    }
-    .check--on
-    {
-        @extend .check;
-        background: $color-tertiary;
-        width:100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
+display:flex;
+justify-content: center;
+align-items: center;
    .fas
     {
-        color: white;
-        font-size: 1.5rem;
-        transform: rotate(180deg);
+    color: white;
+    font-size: 1.5rem;
+    transform: rotate(180deg);
     }
 }
 
 .command
 { display: flex;
 justify-content: center;
-padding-top: 20px;}
+padding-top: 20px; 
+}
