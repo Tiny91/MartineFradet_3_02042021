@@ -1,3 +1,30 @@
+/* propriétés et animation du coeur */
+.like 
+{ 
+  position: relative;
+  font-size: 2rem;
+  margin-right: 20px;
+  margin-top: 5px;
+  .default-icon
+  { 
+  position: absolute;
+  }
+  .hover-icon
+  {
+  position: absolute;
+  opacity: 0;
+  background-image:linear-gradient($color-primary,$color-secondary);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition-duration: 300ms;
+    &:hover 
+    {
+    cursor: pointer;
+    opacity:1;
+    }
+  }
+}
+
 /*apparition section pages en décalé*/
 @keyframes clearness 
 {
@@ -15,11 +42,12 @@ from{
 @keyframes spin
 {
     0%{
-    transform: scale(1.5) rotate(2turn);
+    transform: scale(2) rotate(2turn);
     opacity:1;
     }
     100%{
-    transform: scale(0) opacity 0;
+    transform: scale(0);
+     opacity: 0;
     }
 }
 /*transparence page */  
@@ -53,12 +81,14 @@ from{
 /* animation page d'accueil*/
 .loader
 {
-    position:absolute;
-    width: 150px;
+    position: absolute;
+    width: 60px;
+    height:60px;
     top: 50%;
-    left: 25%;      
-    border-radius: 100%;
-    border: 10px double $color-darkgreen;
+    left: 50%; 
+    margin-left: -3rem;     
+    border-radius:50%;
+    border: 20px double $color-darkgreen;
     border-top-color: $color-primary;
     border-bottom-color: $color-tertiary;
     border-left-color: $color-secondary;
@@ -66,18 +96,18 @@ from{
     opacity: 0;
 }
 .page
-{   animation:fade 2s;
+{   animation:fade 1s;
     opacity:1
 }
 .search
 {
-    animation: clearness 1s;
+    animation: clearness 1100ms;
 }
 .fonctionnement
 {
-    animation: clearness 2s;
+    animation: clearness 1500ms;
 }
 .restaurant
 {
-    animation: clearness 3s;
+    animation: clearness 2000ms;
 }

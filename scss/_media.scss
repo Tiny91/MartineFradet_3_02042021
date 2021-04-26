@@ -1,0 +1,114 @@
+@media screen and (min-width: 500px)
+{
+  header
+  { 
+    .logo
+    {
+      width: 18rem;
+    }
+    .fa-arrow-left
+    {
+      padding-left: 20px;
+      padding-top: 30px;
+    }
+  }
+  footer 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name
+  {
+    font-size: 1.7rem;
+  }
+    /*page d'accueil*/
+    
+  .restaurant__cards
+  { 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+  .restaurant__boxcard
+  {
+    width: 35%;
+  }
+
+   /*pages restaurants*/
+  
+  .menu__contains
+  {
+    display: flex;
+    width:100%
+  }
+  .menu__entrees
+  {
+    width: 33%;
+  }
+  .menu__plats
+  {
+    width: 33%;
+  }
+  .menu__desserts
+  {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1100px)
+{
+  .name
+  {
+    font-size: 1.8rem;
+  } 
+  /*page d'accueil*/
+  .containdesktop
+  {
+    display:flex;
+    flex-direction: row-reverse;
+  } 
+  .fonctionnement
+  {
+    width: 30%;
+  }
+  .containstep
+  {
+    align-items:flex-start
+  }
+  .step
+  {
+    width:300px;
+  }
+  .restaurant
+  {
+    background-color: white;
+    margin-top: 40px;
+    width: 70%;
+    h2 
+    {
+      margin-left: 50px;
+    }
+  }
+  .restaurant__boxcard
+  {
+    background-color:$color-bckground;
+    img
+    {
+      min-height:200px
+    }
+  }
+  
+     /*pages restaurants*/
+  .menu 
+  {
+    padding-left: 120px;
+     padding-right: 120px;
+  }
+  .menustep
+  {
+    margin-right:25px
+  }
+       
+  
+}

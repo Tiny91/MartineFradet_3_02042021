@@ -4,7 +4,14 @@ body
 {
   font-family: "roboto", sans-serif;
   margin: 0px;
-  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*Titre h2 police differente*/
+.name 
+{
+  font-family: 'Shrikhand', cursive;
+  font-size: 1.4rem;
 }
 
 a 
@@ -21,14 +28,14 @@ i /*couleur par défaut des icones*/
 header 
 {
   display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 20px;
-}
+  margin: 20px;
+ }
 
-.logo img 
+.logo  
 {
   width: 12rem;
+  margin: auto;
+  padding:12px
 }
 
 footer 
@@ -44,39 +51,6 @@ footer
   {
     color: white;
     padding-right: 10px;
-  }
-}
-/*Titre h2 police differente*/
-.name 
-{
-  font-family: "shrikland";
-  font-style: italic;
-}
-
-/* propriétés et animation du coeur */
-.like 
-{ position: relative;
-  font-size: 2rem;
-  margin-right: 20px;
-  margin-top: 5px;
-  .default-icon
-  { 
-  position: absolute;
-  }
-  .hover-icon
-  {
-  position: absolute;
-  opacity: 0;
-  color:$color-primary;
-  background:linear-gradient($color-primary,$color-secondary);
-  background-clip: text;
-  color: transparent;
-  transition-duration: 300ms;
-    &:hover 
-    {
-    cursor: pointer;
-    opacity:1;
-    }
   }
 }
 

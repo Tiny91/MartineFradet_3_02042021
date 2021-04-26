@@ -13,10 +13,8 @@
 
 <body>
     <header>
-        <div class="logo">
-        <img src="public/img/logo.png" alt="Ohmyfood"/>
+         <img src="public/img/logo.png" alt="Ohmyfood" class="logo"/>
         <h1 hidden> Ohmyfood , réservez votre menu avant votre venue</h1>
-        </div>
     </header>
 
     <main class="page">
@@ -31,96 +29,99 @@
                 <a class="colorbtn" href=""> Explorez nos restaurants </a> 
             </div>
         </section>
+        <section class="containdesktop">
+            <aside class="fonctionnement"> <!--les 3 étapes(step) de fonctionnement-->
+                <h2>Fonctionnement</h2>
+                <div class="containstep">
+                    <div class="step">
+                        <span class="step__number">1</span>
+                        <i class="fas fa-mobile-alt"></i>
+                        Choisissez un restaurant
+                    </div>
+                    <div class="step">
+                        <span class="step__number">2</span> 
+                        <i class="fas fa-list"></i>
+                        Composez votre menu
+                    </div>
+                    <div class="step">
+                        <span class="step__number">3</span>
+                        <i class="fas fa-store"></i>
+                        Dégustez au restaurant
+                    </div>
+                </div>
+            </aside>
+        
+            <section class="restaurant">  <!-- les restaurants sélectionnés-->
+                <h2>Restaurants</h2>
+                <div class="restaurant__cards">
+                    <figure class="restaurant__boxcard">
+                        <img src="public/img/palette-gout.jpg" alt="la palette du goût"/>
+                        <div class="new">Nouveau</div>
+                        <div class="restaurant__legend">
+                            <span>
+                                <a class="linkrestaurant" href="la-palette-du-gout.html">
+                                <strong>La palette du goût</strong><br/>
+                                Ménilmontant    
+                                </a>
+                            </span> 
+                            <span class="like">
+                                <i class="far fa-heart default-icon"></i>
+                                <i class="fas fa-heart hover-icon"></i>
+                            </span>
+                        </div>               
+                    </figure>
 
-        <section class="fonctionnement"> <!--les 3 étapes(step) de fonctionnement-->
-            <h2>Fonctionnement</h2>
-            <div class="step">
-                <span class="step__number">1</span>
-                <i class="fas fa-mobile-alt"></i>
-                Choisissez un restaurant
-            </div>
-            <div class="step">
-                <span class="step__number">2</span> 
-                <i class="fas fa-list"></i>
-                Composez votre menu
-            </div>
-            <div class="step">
-                <span class="step__number">3</span>
-                <i class="fas fa-store"></i>
-                Dégustez au restaurant
-            </div>
-        </section>
-
-        <section class="restaurant">  <!-- les restaurants sélectionnés-->
-            <h2>Restaurants</h2>
-            <div class="restaurant__cards">
-                <figure class="restaurant__boxcard">
-                    <img src="public/img/palette-gout.jpg" alt="la palette du goût"/>
-                    <div class="new">Nouveau</div>
-                    <div class="restaurant__legend">
-                        <span>
-                            <a class="linkrestaurant" href="la-palette-du-gout.html">
-                            <strong>La palette du goût</strong><br/>
-                             Ménilmontant    
-                            </a>
-                        </span> 
-                        <span class="like">
+                    <figure class="restaurant__boxcard">
+                        <img src="public/img/note-enchantee.jpg" alt="la note enchantée"/>
+                        <div class="new">Nouveau</div>
+                        <div class="restaurant__legend">
+                            <span>
+                                <a href="la-note-enchantee.html">
+                                <strong>La note enchantée</strong><br/>
+                                Charonne
+                                </a>
+                            </span>
+                            <span class="like">
                             <i class="far fa-heart default-icon"></i>
                             <i class="fas fa-heart hover-icon"></i>
-                        </span>
-                    </div>               
-                </figure>
-
-                <figure class="restaurant__boxcard">
-                    <img src="public/img/note-enchantee.jpg" alt="la note enchantée"/>
-                    <div class="new">Nouveau</div>
-                    <div class="restaurant__legend">
-                        <span>
-                            <a href="la-note-enchantee.html">
-                            <strong>La note enchantée</strong><br/>
-                             Charonne
-                            </a>
-                        </span>
-                        <span class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                        </span>
-                    </div>
-                </figure>
+                            </span>
+                        </div>
+                    </figure>
+                        
                     
-                
-                <figure class="restaurant__boxcard">
-                    <img src="public/img/française.jpg" alt="A la française"/>
-                    <div class="restaurant__legend">
-                        <span>
-                            <a href="a-la-française.html">
-                             <strong> A la française</strong><br/>
-                             Cité Rouge   
-                            </a>   
-                        </span>
-                        <span class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                        </span>
-                    </div>
-                </figure>
+                    <figure class="restaurant__boxcard">
+                        <img src="public/img/française.jpg" alt="A la française"/>
+                        <div class="restaurant__legend">
+                            <span>
+                                <a href="a-la-française.html">
+                                <strong> A la française</strong><br/>
+                                Cité Rouge   
+                                </a>   
+                            </span>
+                            <span class="like">
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                            </span>
+                        </div>
+                    </figure>
 
-                <figure class="restaurant__boxcard">
-                    <img src="public/img/delice-sens.jpg" alt="le délice des sens"/>
-                    <div class="restaurant__legend">
-                        <span>
-                        <a href="le-delice-des-sens.html">
-                        <strong>Le délice des sens</strong><br/>
-                        Folie-Méricourt
-                        </a>
-                        </span>
-                        <span class="like"> 
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                        </span>
-                    </div> 
-                </figure>
-            </div>
+                    <figure class="restaurant__boxcard">
+                        <img src="public/img/delice-sens.jpg" alt="le délice des sens"/>
+                        <div class="restaurant__legend">
+                            <span>
+                            <a href="le-delice-des-sens.html">
+                            <strong>Le délice des sens</strong><br/>
+                            Folie-Méricourt
+                            </a>
+                            </span>
+                            <span class="like"> 
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                            </span>
+                        </div> 
+                    </figure>
+                </div>
+            </section>
         </section>
     </main>
 

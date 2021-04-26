@@ -1,10 +1,14 @@
 /* page d'accueil */
-.search {
+
+.search 
+{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $color-bckground;
-  .search__location /*formulaire de recherhe*/ {
+  /*formulaire de recherhe*/ 
+  .search__location 
+  {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -14,44 +18,61 @@
     background-color: darken($color-bckground, 10%);
     border-top: 2px groove darken($color-bckground, 10%);
     vertical-align: middle;
-    input {
+    input 
+    {
       background-color: transparent;
       border: transparent;
       font-size: 1rem;
       font-weight: bold;
       color: $color-grey;
     }
-    .fa-map-marker-alt /* icone localisation*/ {
+    /* icone localisation*/
+    .fa-map-marker-alt  
+    {
       padding-right: 10px;
     }
   }
-  .search__text //texte explicatif//
+    .search__text //texte explicatif//
   {
     text-align: center;
   }
 }
 
-//section fonctionnement//
-.fonctionnement {
+/*section fonctionnement*/
+.fonctionnement 
+{
+  width: 100%;
   margin-top: 40px;
-  margin-bottom: 60px;
-  h2 {
+  margin-bottom: 60px;     
+  h2 
+  {
     text-indent: 2rem;
   }
 }
+
 /*etapes de fonctionnement*/
-.step {
+.containstep
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.step 
+{
   background-color: $color-bckground;
-  margin: 25px;
+  width: 70%;
+  margin: 15px;
   padding: 15px;
   border-radius: 20px;
   display: flex;
   box-shadow: 4px 4px 6px darken($color-bckground, 20%);
   vertical-align: middle;
-  .fas {
+  .fas 
+  {
     padding-right: 15px;
   }
-  &:hover /*changt couleur au survol*/ {
+  &:hover /*changt couleur au survol*/ 
+  {
     background-color: $color-lightprimary;
     .fas {
       color: $color-primary;
@@ -59,7 +80,8 @@
   }
 }
 
-.step__number {
+.step__number 
+{
   display: inline-block;
   background: $color-primary;
   color: white;
@@ -71,31 +93,37 @@
 }
 
 //section restaurant//
-.restaurant {
+.restaurant 
+{
   padding-bottom: 20px;
   background-color: $color-bckground;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  h2 {
+  h2 
+  {
     text-indent: 2rem;
   }
-  .restaurant__cards {
+  .restaurant__cards 
+  {
     align-items: center;
   }
 }
 /*cartes restaurants*/
-.restaurant__boxcard {
+.restaurant__boxcard 
+{
   position: relative;
   background-color: white;
   border-radius: 20px;
-  img {
+  img 
+  {
     width: 100%;
     max-height: 160px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
   }
-  .new {
+  .new 
+  {
     position: absolute;
     top: 10px;
     right: 12px;
@@ -105,7 +133,8 @@
     font-weight: bold;
     font-size: 0.8rem;
   }
-  .restaurant__legend {
+  .restaurant__legend 
+  {
     padding: 10px 30px 10px 20px;
     display: flex;
     justify-content: space-between;
