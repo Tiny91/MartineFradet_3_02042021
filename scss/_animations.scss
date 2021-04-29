@@ -11,16 +11,16 @@
   }
   .hover-icon
   {
-  position: absolute;
-  opacity: 0;
-  background-image:linear-gradient($color-primary,$color-secondary);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  transition-duration: 300ms;
+    position: absolute;
+    opacity: 0;
+    background-image:linear-gradient($color-primary,$color-secondary);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition-duration: 300ms;
     &:hover 
     {
-    cursor: pointer;
-    opacity:1;
+      cursor: pointer;
+      opacity:1;
     }
   }
 }
@@ -50,16 +50,47 @@ from{
      opacity: 0;
     }
 }
+
 /*transparence page */  
 @keyframes fade
 {   
- to {
+to {
     opacity:0.3;
     }
 from{
     opacity:1;
     }
 }
+
+/* animation coche choix plat */
+@keyframes check 
+{
+    0%{
+    transform: translate(60px,0);
+    }   
+    100%{
+    transform: translate(0px, 0);
+    }
+}   
+@keyframes turncheck 
+{
+    0%{
+    transform: rotate(-90deg);
+    }    
+    100%{
+    transform: rotate(0deg) ;
+    }
+}
+@keyframes price 
+{
+    0%{
+    transform: translate(65px,0);
+    }    
+    100% {
+    transform: translate(0px,0);
+    }
+}
+
 
 /*animation pages restaurants*/
 .menu__entrees
@@ -96,7 +127,8 @@ from{
     opacity: 0;
 }
 .page
-{   animation:fade 1s;
+{   
+    animation:fade 1s;
     opacity:1
 }
 .search

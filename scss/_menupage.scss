@@ -3,141 +3,136 @@
 header
 {
 .fa-arrow-left
-    {
+  {
     font-size: 1.3rem;
     color: black;
     padding-top: 20px;
-    }
+  }
 }
 
 /* la photo du restaurant en-tête*/
-
 .picture 
 {
-    width: 100%;
-    max-height:250px;
-    background-color: $color-bckground;
-    object-fit: cover; 
+  width: 100%;
+  max-height:250px;
+  background-color: $color-bckground;
+  object-fit: cover; 
 }
 
 .menu 
 {
-    background-color: $color-bckground;
-    border-radius: 50px 50px 0 0;
-    margin-top: -45px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    position: relative;
-    .menu__title
+  background-color: $color-bckground;
+  border-radius: 50px 50px 0 0;
+  margin-top: -45px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  position: relative;
+  .menu__title
     {
-        display: flex;
-        padding: 0px 40px 0px 40px;
-        justify-content: space-between;
-        .like
+      display: flex;
+      padding: 0px 40px 0px 40px;
+      justify-content: space-between;
+      .like
         { 
-            display: flex;
-            align-items: center;
+          display: flex;
+          align-items: center;
         }
     }
     .menu__subtitle 
     {
-        font-variant:small-caps;
-        margin-left: 2rem;
-        border-bottom: 4px solid $color-tertiary;
-        width: 3rem;
+      font-variant:small-caps;
+      margin-left: 2rem;
+      border-bottom: 4px solid $color-tertiary;
+      width: 3rem;
     }
 }
+
 /* bouton de chaque plat*/
 .menustep
 {
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: flex;
-    font-size: 0.9rem;
-    background-color: white;
-    position:relative;
-    cursor: pointer;
-    margin: 15px;
-    padding-left: 15px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 6px darken($color-bckground, 20%);
-    /*apparition coche verte*/
-    &:hover 
+  overflow:hidden;
+  display: flex;
+  height: 80px;
+  font-size: 0.8rem;
+  background-color: white;
+  cursor: pointer;
+  margin: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px darken($color-bckground, 20%);
+  transition: transform;
+    /*apparition et mouvement coche verte*/
+  &:hover 
+  {
+    .check 
     {
-        .check 
-        {
-            transform: translate(-95px) ;
-            transition: transform 1500ms;       
-        }
-        /* rotation  coche verte */
-        .fas 
-        {
-            transform: rotate(0deg);
-            transition: transform 1000ms 500ms;  
-        }
-        .menu__price
-        {
-            transform: translate(-65px) ;
-            transition: transform 1500ms; 
-        } 
-
+      animation: check 350ms ease-in-out;
+      display:flex;      
+    }  
+    .fa-check-circle
+    {
+      animation: turncheck 350ms 150ms ;  
     }
+    .menu__price
+    {
+      animation: price 350ms ease-in-out;         
+    } 
+  }
 }
 
 .menu__choice
 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width:100%;
+  h4 
+  {  
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 85%;
- h4 
-    {  
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-     }
- p 
-    {  
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        width: 90%;
-    }
+  }
+  p 
+  {  
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 80%;    
+  }
 }
 
 .menu__price
-{   width: 15%;
-    display: flex;
-    align-items: flex-end;
-    font-weight: bold;    
+{   
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;    
 }
 
 /*bloc de validation choix*/
 .check 
 {
-    position: absolute;
-    bottom: 0px;
-    right:-100px;
-    background-color: $color-tertiary;
-    width: 20%;
-    height:100%;
-    border-radius: 0 20px 20px 0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    .fas
-    {
-        color: white;
-        font-size: 1.5rem;
-        transform: rotate(180deg);
-    }
+  background-color: $color-tertiary;
+  width: 40%;
+  height:100%;
+  border-radius: 0 20px 20px 0;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  .fa-check-circle
+  {
+    color: white;
+    font-size: 1.5rem;
+    transform: rotate(0deg);
+  }
 }
 
+/* bouton couleur pour commander*/
 .command
 {
-    background-color: $color-bckground;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px; 
+  background-color: $color-bckground;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px; 
 }
+
