@@ -19,6 +19,7 @@ a {
   color: black;
 }
 
+/*couleur par défaut des icones*/
 i {
   color: #8a8a8a;
 }
@@ -454,32 +455,6 @@ header .fa-arrow-left {
   opacity: 1;
 }
 
-/*apparition section pages en décalé*/
-@-webkit-keyframes clearness {
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-@keyframes clearness {
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-
 /*animation loader page d'accueil*/
 @-webkit-keyframes spin {
   0% {
@@ -508,19 +483,45 @@ header .fa-arrow-left {
 
 /*transparence page */
 @-webkit-keyframes fade {
-  to {
+  from {
     opacity: 0.3;
   }
-  from {
+  to {
     opacity: 1;
   }
 }
 @keyframes fade {
-  to {
+  from {
     opacity: 0.3;
   }
-  from {
+  to {
     opacity: 1;
+  }
+}
+
+/*apparition section pages en décalé*/
+@-webkit-keyframes clearness {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes clearness {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -590,31 +591,6 @@ header .fa-arrow-left {
   }
 }
 
-/*animation pages restaurants*/
-.menu__entrees {
-  opacity: 1;
-  -webkit-animation-name: clearness;
-          animation-name: clearness;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-}
-
-.menu__plats {
-  opacity: 1;
-  -webkit-animation-name: clearness;
-          animation-name: clearness;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-
-.menu__desserts {
-  opacity: 1;
-  -webkit-animation-name: clearness;
-          animation-name: clearness;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
 /* animation page d'accueil*/
 .loader {
   position: absolute;
@@ -650,8 +626,33 @@ header .fa-arrow-left {
 }
 
 .restaurant {
-  -webkit-animation: clearness 2000ms;
-          animation: clearness 2000ms;
+  -webkit-animation: clearness 1800ms;
+          animation: clearness 1800ms;
+}
+
+/*animation pages restaurants*/
+.menu__entrees {
+  opacity: 1;
+  -webkit-animation-name: clearness;
+          animation-name: clearness;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.menu__plats {
+  opacity: 1;
+  -webkit-animation-name: clearness;
+          animation-name: clearness;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.menu__desserts {
+  opacity: 1;
+  -webkit-animation-name: clearness;
+          animation-name: clearness;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 @media screen and (min-width: 500px) {

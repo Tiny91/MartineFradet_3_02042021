@@ -25,19 +25,6 @@
   }
 }
 
-/*apparition section pages en décalé*/
-@keyframes clearness 
-{
- to { 
-    opacity:1;
-    transform: scale(1)
-    }   
-from{
-    opacity:0;
-    transform: scale(0)
-    }  
-}
-
 /*animation loader page d'accueil*/
 @keyframes spin
 {
@@ -54,12 +41,25 @@ from{
 /*transparence page */  
 @keyframes fade
 {   
-to {
+from{
     opacity:0.3;
     }
-from{
+to {
     opacity:1;
     }
+}
+
+/*apparition section pages en décalé*/
+@keyframes clearness 
+{
+from{
+    opacity:0;
+    transform: scale(0)
+    } 
+to { 
+    opacity:1;
+    transform: scale(1)
+    }   
 }
 
 /* animation coche choix plat */
@@ -91,24 +91,6 @@ from{
     }
 }
 
-
-/*animation pages restaurants*/
-.menu__entrees
-{   opacity: 1;
-    animation-name: clearness;
-    animation-duration: 1s;
-}
-.menu__plats
-{   opacity: 1;
-    animation-name: clearness;
-    animation-duration: 2s;
-}
-.menu__desserts
-{   opacity: 1;
-    animation-name: clearness;
-    animation-duration: 3s;
-}
- 
 /* animation page d'accueil*/
 .loader
 {
@@ -141,5 +123,23 @@ from{
 }
 .restaurant
 {
-    animation: clearness 2000ms;
+    animation: clearness 1800ms;
 }
+
+/*animation pages restaurants*/
+.menu__entrees
+{   opacity: 1;
+    animation-name: clearness;
+    animation-duration: 1s;
+}
+.menu__plats
+{   opacity: 1;
+    animation-name: clearness;
+    animation-duration: 2s;
+}
+.menu__desserts
+{   opacity: 1;
+    animation-name: clearness;
+    animation-duration: 3s;
+}
+ 

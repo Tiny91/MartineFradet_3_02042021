@@ -6,8 +6,8 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-bckground;
-  /*formulaire de recherhe*/ 
-  .search__location 
+   /*formulaire de recherhe*/
+  .search__location
   {
     width: 100%;
     display: flex;
@@ -74,7 +74,8 @@
   &:hover /*changt couleur au survol*/ 
   {
     background-color: $color-lightprimary;
-    .fas {
+    .fas 
+    {
       color: $color-primary;
     }
   }
